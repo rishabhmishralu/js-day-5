@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-day-5
+
+    </title>
+    <style>
+        h1,h2{
+            color: aliceblue;
+            text-align: center;
+        }
+        body{
+            background-color: black;
+        }
+        pre{
+            margin: 50px;
+            color: aquamarine;
+        }
+        b{
+            color: brown;
+        }
+        p{
+            color: aliceblue;
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JS INTERVIEW QUESTIONS</h1>
+    <h2>DAY-5</h2>
+    <hr>
+    <p><b>1-What is hoisting?</b></p>
+    <p>hoisting is a concept that  uses extact values of variable and function even before initization, without giving error</p>
+    <pre>sum()
+        function sum(){
+            console.log("dfghjkl;");
+        },
+        console.log(x);
+        var x=10,</pre>
+        <p>annonmous function and arrow function and block scope is given error.</p>
+    <hr>
+    <p><b>2-What is a Temporal Dead Zone?</b></p>
+    <p>Temporal Dead Zone is the period of time during which the let and const declarations cannot be accessed</p>
+    <hr>
+    <p><b>3-What is the DOM?</b></p>
+    <p>DOM stands for Document Object Model. It is a programming interface that allows us to create, change, or remove elements from the document. We can also add events to these elements to make our page more dynamic.</p>
+    <hr>
+    <p><b>4-Explain passed by value and passed by reference</b></p>
+    <hr>
+    <p><b>5-Write code to explain map and filter in arrays</b></p>
+    <pre>const a=[1,2,3,4,4,5,3]
+        c=a.map((a)=>a+1)
+        console.log(c);<br>
+        onst arr=[1,2,3,4,4,5,3]
+        c=arr.filter((a)=>a===4)
+        console.log(c);
+
+         reduce:
+        const arr=[1,2,3,4,4,5,3]
+        c=arr.reduce((a,b)=>a+b)
+        console.log(c);
+    </pre>
+    <hr>
+    <p><b>6-What is the purpose of async/await keywords?</b></p>
+    <p>async and await modifiers make it simple and easy to convert your code from synchronous programming to asynchronous programming.
+        await keyword use in body of code 
+    </p>
+    <pre> async function sum(a,b){
+        await console.log(a+b);
+          console.log(a*b)
+          
+       }
+       sum(2,4)
+       console.log("multi");</pre>
+    <hr>
+    <p><b>7-Give an example of async/await</b></p>
+    <pre>async function sum(a,b){
+        c=a+b;
+       await console.log(c)
+       function multi(){
+        console.log(a*b);
+       }
+       multi()
+    }
+    sum(2,4)
+    
+    console.log("rtyui");</pre>
+    <hr>
+    <script src="./index.js"></script>
+</body>
+
+</html>
