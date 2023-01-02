@@ -29,3 +29,21 @@
 //  }
 //  sum(2,4)
 //  console.log("multi");
+
+
+// call by values and call by reference 
+
+// call by vlaues are use in premitive data type it can chage the values .
+
+// let x=23
+// y=x
+// console.log(y);
+// y=32
+// console.log(y);
+
+// call by refeence is use in non premetive date type passes refence when we chage one second is also change ,
+// const arr=[1,2,3,4,5,6]
+
+// arr2=arr
+// arr.push(12,34,43)
+// console.log(arr2);
